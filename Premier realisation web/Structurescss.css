@@ -1,0 +1,199 @@
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(65, 61, 61);
+}
+header {
+    background-color: black;
+}
+
+.box {
+    display: flex;
+     }
+
+.fs{
+  color:white;
+  font-family: 'Nerko One', cursive;
+}
+
+button{ 
+    position: relative;
+    height: 50px;
+    width: 150px;
+    border: 0cm;
+    background-color: transparent;
+    
+}
+
+.div_menu {
+    position: relative;
+    height: 50px;
+    width: 150px;
+    left: 400px;
+    
+}
+
+.button_menu {
+    position: relative;
+    height: 50px;
+    width: 150px;
+    border: 0cm;
+    background-color: transparent;
+    font-family: 'Nerko One', cursive;
+    text-align:center ;
+    font-weight: bold;
+    color: white  
+}
+
+.button_menu:hover {
+    background-color:rgba(78, 19, 255, 0.729);
+}
+.button:hover {
+    background-color:rgba(78, 19, 255, 0.729);
+}
+
+
+.bouton_header {
+    transition: all 0.2s;
+}
+
+.bouton_header:hover {
+    transform:scale(1.5);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+  }
+img {
+    width: 100%;
+    height: fit-content;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Nerko One', cursive;
+  font-weight: bold;
+  font-size: medium;
+  color :white;
+}
+
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Nerko One', cursive;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(78, 19, 255, 0.729);
+  color: white;
+  
+  /* text au milieu*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+h1{ 
+  margin-bottom: .5em;
+  text-align: center;
+  font-family: 'Nerko One', cursive;
+  font-weight: bold;
+  font-size: medium;
+  color :white;
+
+}
+
+
+.slider-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  height: 350px;
+  overflow: hidden;
+}
+.menu {
+  position: absolute;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: rgb(0, 0, 0);
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+  background:rgba(78, 19, 255, 0.729);
+}
+.slide-input{
+  opacity: 0;
+}
+.slide-img {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  transition: left 0s 0.75s;
+}
+[id^="slide"]:checked + .slide-img {
+  left: 0;
+  z-index: 100;
+  transition: left 0.65s ease-out;
+}
+
+h3{
+  text-align: center;
+  font-family: 'Nerko One', cursive;
+  font-weight: bold;
+  font-size: medium;
+  color :white;
+}
+
+footer{
+  background-color: black;
+  text-align: center;
+  padding: 15 px;
+  border: solid;
+}

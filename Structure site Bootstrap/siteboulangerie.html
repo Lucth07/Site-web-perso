@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="maincss.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/d5376e79b9.js" crossorigin="anonymous"></script>
+  <title>Pause Boulang'</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="siteboulangerie.html">Pause Boulang'</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="siteboulangerie.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="page_produit.html">Produits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <a class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </form>
+    <a href="page_produit.html" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">commande</a>
+  </nav>
+  <!-- Modale -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Commande à Emporter</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2><i class="fa-solid fa-cart-plus"></i>Vous n'avez pas de commande en cours!</h2>
+        </div>
+        <div class="modal-footer">
+          <a href="page_produit.html" class="btn btn-outline-dark" data-dismiss="modal">Fermer</a>
+          <a href="page_produit.html" class="btn btn-outline-dark">Commandez!</a>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div class="container mt-5">
+    <h1><i class="fa-solid fa-bread-slice fa-shake"></i>Bienvenue chez Pause Boulang'<i class="fa-solid fa-bread-slice fa-shake"></i></h1>
+    <p>Nous sommes une boulangerie artisanale située en plein cœur de la cité du design. Nous proposons une large gamme de pains et de viennoiseries fraîchement préparées chaque jour avec des ingrédients de qualité.</p>
+  </div>
+  <div class="separator"></div>
+  <br>
+  <h1><i class="fa-solid fa-cookie-bite fa-beat-fade" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;" "></i>Les Produits</i></h1>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="hovereffect">
+          <a href="page_produit.html">
+          <div class="imgef">
+          <img class="img-fluid" src="images/brioche.jpg" alt="brioche">
+        </a>
+        </div>
+          <div class="overlay">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="hovereffect">
+          <a href="page_produit.html">
+          <div class="imgef">
+          <img class="img-fluid" src="images/patisseries.jpeg" alt="patisseries">
+            </a>
+            </div>
+          <div class="overlay">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="hovereffect">
+          <a href="page_produit.html">
+          <div class="imgef">
+          <img class="img-fluid" src="images/burger.jpg" alt="burger">
+            </a>
+            </div>
+          <div class="overlay">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="hovereffect">
+          <a href="page_produit.html">
+          <div class="imgef">
+          <img class="img-fluid" src="images/sandwich-croque-monsieur.jpg" alt="sandwich-croque-monsieur">
+            </a>
+            </div>
+          <div class="overlay">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="hovereffect">
+          <a href="page_produit.html">
+          <div class="imgef">
+          <img class="img-fluid" src="images/chocolat2.jpg" alt="chocolat">
+          </a>
+        </div>
+          <div class="overlay">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="hovereffect">
+          <a href="page_produit.html">
+          <div class="imgef">
+          <img class="img-fluid" src="images/croissants2.jpg" alt="croissants">
+            </a>
+            </div>
+          <div class="overlay">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="hovereffect">
+          <a href="page_produit.html">
+          <div class="imgef">
+          <img class="img-fluid" src="images/pain au chocolat.jpg" alt="pain au chocolat">
+            </a>
+            </div>
+          <div class="overlay">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="hovereffect">
+          <a href="page_produit.html">
+          <div class="imgef">
+          <img class="img-fluid" src="images/pain.jpg" alt="pain">
+            </a>
+            </div>
+          <div class="overlay">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="hovereffect">
+          <a href="page_produit.html">
+          <div class="imgef">  
+          <img class="img-fluid" src="images/galette2.jpg" alt="galette" href="page_produit.html">
+          </a>
+        </div>
+          <div class="overlay"></div>
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h1><i class="fa-solid fa-store fa-beat-fade" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075;" "></i>Découvrez la Boutique</h1>
+  <br> 
+  <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="images/façade.jpg" alt="façade">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/intérieur.jpg" alt="intérieur">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="images/intérieur 2.jpg" alt="Slide 3">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Précédent</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Suivant</span>
+    </a>
+    <br>
+    <h3><i class="fa-solid fa-location-dot fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;"></i>Pour rappel nous sommes situés a 10 Rue Pablo Picasso, 42000 Saint-Étienne!</h3>
+  </div>
+  <br>
+    <h1><i class="fa-solid fa-book fa-flip" style="--fa-animation-duration: 3s;"></i>Notre histoire</h1>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/histoire.jpg"  class="img-fluid">
+        </div>
+        <div class="col-md-8">
+          <h4>Tout commence il y a 10 ans, Vincent Gallot et Jacques Bouchut décident d'un commun accord de développer un projet de snack/Boulangerie dans la cité du design... 
+            C'est d'ici que germe le projet Pause Boulang'. Grâce à ces quelques artisans , du pain frais, des viennoiseries et des patisseries sont produites chaque jour de leurs mains et vendu.
+            Pause boulang' s'intégre bien au décor de la cite du design, qui popularise la petite boulangerie/snack au fils des années. L'intérieur séduisant et l'ambiance chaleureuse de l'établissement ainsi que les produits saisonniers font de Pause Boulang' un incourtounable avec une clientèle fidèle.
+            10 ans plus tard, les patrons décident d'élargir la boutique pour en faire un vértiable petit snack, avec une terasse. Ils recrutent aussi de nombreux salariés afin de rendre leur boutique encore plus dynamique. 
+            Aujourd'hui Pause Boulang' acceuille plus de 200 clients par jour, et ce pour notre plus grand plaisir!</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+  <div class="separator"></div>
+  <footer class="bg-light py-3 mt-5">
+    <div class="container">
+      <p class="text-center mb-0">Copyright &copy; 2021 Pause Boulang'</p>
+    </div>    
+  </footer>
+</html>

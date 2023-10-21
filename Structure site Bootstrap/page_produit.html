@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="maincss.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d5376e79b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="siteboulangerie.html">Pause Boulang'</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="siteboulangerie.html">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="page_produit.html">Produits</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <a class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></a>
+  </form>
+  <a href="page_produit.html" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal1">commande</a>
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Commande à Emporter</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2><i class="fa-solid fa-cart-plus"></i>Vous n'avez pas de commande en cours!</h2>
+        </div>
+        <div class="modal-footer">
+          <a href="page_produit.html" class="btn btn-outline-dark" data-dismiss="modal">Fermer</a>
+          <a href="page_produit.html" class="btn btn-outline-dark">Commandez!</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</nav>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <img class="card-img-top" src="images/pluiedebrioche.jpg" alt="brioche">
+      <div class="card-body">
+        <h3 class="card-title">Nos Brioches</h3>
+        <p class="card-text">De 3,50€ à 10€</p>
+        <a type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+          Commandez
+        </a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Choisissez la quantité</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <label for="quantity">quantité</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                        </div>
+                        <input type="text" id="quantity" class="form-control" value="1" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-outline-dark" data-dismiss="modal">fermer</a>
+                <a type="button" class="btn btn-outline-dark">commandez</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <img class="card-img-top" src="images/chocolat.jpg" alt="chocolat">
+      <div class="card-body">
+        <h3 class="card-title">Les chocolats</h3>
+        <p class="card-text">de 9,50€ à 40€</p>
+        <a type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+          Commandez
+        </a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Choisissez la quantité</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <label for="quantity">quantité</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                        </div>
+                        <input type="text" id="quantity" class="form-control" value="1" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-outline-dark" data-dismiss="modal">fermer</a>
+                <a type="button" class="btn btn-outline-dark">Commandez</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <img class="card-img-top" src="images/croissants.jpg" alt="Croissants">
+      <div class="card-body">
+        <h3 class="card-title">Les croissants</h3>
+        <p class="card-text">Cuits chaque matin, dès 0,90€</p>
+        <a type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+          Commandez
+        </a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Choisissez la quantité</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <label for="quantity">quantité</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                        </div>
+                        <input type="text" id="quantity" class="form-control" value="1" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-outline-dark" data-dismiss="modal">fermer</a>
+                <a type="button" class="btn btn-outline-dark">commandez</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <img class="card-img-top" src="images/sandwich.jpg" alt="sandwich">
+      <div class="card-body">
+        <h3 class="card-title">Les Sandwichs</h3>
+        <p class="card-text">Une grande variété de sandwichs dès 3,50€</p>
+        <a type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+          Commandez
+        </a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Choisissez la quantité</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <label for="quantity">quantité</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                        </div>
+                        <input type="text" id="quantity" class="form-control" value="1" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-outline-dark" data-dismiss="modal">fermer</a>
+                <a type="button" class="btn btn-outline-dark">commandez</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <img class="card-img-top" src="images/sandwich.jpg" alt="sandwich">
+      <div class="card-body">
+        <h3 class="card-title">Les Burgers et Panini</h3>
+        <p class="card-text">A partir de 4,50€ et disponible en menu!</p>
+        <a type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+          Commandez
+        </a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Choisissez la quantité</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <label for="quantity">quantité</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                        </div>
+                        <input type="text" id="quantity" class="form-control" value="1" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-outline-dark" data-dismiss="modal">fermer</a>
+                <a type="button" class="btn btn-outline-dark">commandez</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>  <div class="col-sm-4">
+    <div class="card">
+      <img class="card-img-top" src="images/patisseries2.jpg" alt="patisseries">
+      <div class="card-body">
+        <h3 class="card-title">Toute nos patisseries</h3>
+        <p class="card-text">Une très grandes variétés de 2,50€ à 10€</p>
+        <a type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+          Commandez
+        </a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Choisissez la quantité</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <label for="quantity">quantité</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                        </div>
+                        <input type="text" id="quantity" class="form-control" value="1" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-outline-dark" data-dismiss="modal">fermer</a>
+                <a type="button" class="btn btn-outline-dark">commandez</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-4">
+    <div class="card">
+      <img class="card-img-top" src="images/pain au chocolat2.jpg" alt="pain au chocolat">
+      <div class="card-body">
+        <h3 class="card-title">Les pains au chocolats</h3>
+        <p class="card-text">Cuits chaque matin, dès 1€</p>
+        <a type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+          Commandez
+        </a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Choisissez la quantité</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <label for="quantity">quantité</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                        </div>
+                        <input type="text" id="quantity" class="form-control" value="1" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-outline-dark" data-dismiss="modal">fermer</a>
+                <a type="button" class="btn btn-outline-dark">commandez</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <img class="card-img-top" src="images/pain2.jpg" alt="pain">
+      <div class="card-body">
+        <h3 class="card-title">Le bon Pain</h3>
+        <p class="card-text">Cuits chaque matin dès 1,10€ la baguette</p>
+        <a type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+          Commandez
+        </a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Choisissez la quantité</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <label for="quantity">quantité</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                        </div>
+                        <input type="text" id="quantity" class="form-control" value="1" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-outline-dark" data-dismiss="modal">fermer</a>
+                <a type="button" class="btn btn-outline-dark">commandez</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <img class="card-img-top" src="images/galette.jpg" alt="galette">
+      <div class="card-body">
+        <h3 class="card-title">Nos bonnes galettes</h3>
+        <p class="card-text">Dès 15€ pour 4 personnes!</p>
+        <a type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
+          Commandez
+        </a>
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Choisissez la quantité</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <label for="quantity">quantité</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                        </div>
+                        <input type="text" id="quantity" class="form-control" value="1" readonly>
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a type="button" class="btn btn-outline-dark" data-dismiss="modal">fermer</a>
+                <a type="button" class="btn btn-outline-dark">commandez</a>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+<footer class="bg-light py-3 mt-5">
+  <div class="container">
+    <p class="text-center mb-0">Copyright &copy; 2021 Pause Boulang'</p>
+  </div>    
+</footer>
+</html>
